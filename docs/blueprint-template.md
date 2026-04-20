@@ -81,9 +81,9 @@
   - Authored runbooks with specific mitigation steps for RAG and LLM failures.
 - [EVIDENCE_LINK]: [first commit](https://github.com/hoxuanphu/Lab13-Nhom16-E402/commit/aaea471954ab6e42c985a54145c98c8392f92e84)
 
-### [MEMBER_D_NAME]
-- [TASKS_COMPLETED]: 
-- [EVIDENCE_LINK]: 
+### Lại Đức Anh (Member D)
+- [TASKS_COMPLETED]: running inject_incident.py and load_test.py to generation logs.json
+- [EVIDENCE_LINK]: https://github.com/hoxuanphu/Lab13-Nhom16-E402/blob/main/data/logs.jsonl
 
 ### Phạm Anh Quân (Member E)
 - [TASKS_COMPLETED]: 
