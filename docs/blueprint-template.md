@@ -37,11 +37,9 @@
 
 | SLI | Target | Window | Current Value |  
 | --- | --- | --- | --- |  
-| Latency P95 | < 2500ms | 28d | 150.0ms |  
+| Latency P95 | < 2500ms | 28d | 153ms |  
 | Error Rate | < 1% | 28d | 0.00% |  
 | Cost Budget | < $2.0/day | 1d | $0.11 |  
-=======
-
 
 ### 3.3 Alerts & Runbook
 - ALERT_RULES_SCREENSHOT: [docs/screenshots/current_dashboard.png](https://github.com/hoxuanphu/Lab13-Nhom16-E402/blob/main/screenshots/alert.png)
@@ -78,9 +76,14 @@
 - [TASKS_COMPLETED]: 
 - [EVIDENCE_LINK]: 
 
-### [MEMBER_E_NAME]
+### Phạm Anh Quân (Member E)
 - [TASKS_COMPLETED]: 
-- [EVIDENCE_LINK]: 
+    - Integrated Langfuse SDK and resolved environment variable loading issues.
+    - Developed a 6-panel monitoring dashboard on Langfuse for real-time SLI tracking.
+    - Executed load tests via scripts to verify logging, tracing, and PII redaction.
+    - Conducted root cause analysis of incidents and collected technical evidence for the report.
+- [EVIDENCE_LINK]: [app/tracing.py](../app/tracing.py), [app/main.py](../app/main.py), [docs/screenshots/dashboard.png](screenshots/dashboard.png)
+
 
 ---
 
