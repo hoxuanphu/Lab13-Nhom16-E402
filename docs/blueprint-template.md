@@ -57,9 +57,13 @@
 
 ## 5. Individual Contributions & Evidence
 
-### [MEMBER_A_NAME]
-- [TASKS_COMPLETED]: 
-- [EVIDENCE_LINK]: (Link to specific commit or PR)
+### Hoàng Ngọc Thạch
+- [TASKS_COMPLETED]:
+  1. Implemented `CorrelationIdMiddleware` in `app/middleware.py`: clear contextvars between requests, generate `req-<8hex>` ID, bind to structlog context, propagate via `x-request-id` and `x-response-time-ms` response headers
+  2. Enriched request logs in `app/main.py`: bound `user_id_hash`, `session_id`, `feature`, `model` to structlog context via `bind_contextvars` so all downstream logs carry full request context
+  3. Enabled PII scrubbing processor in `app/logging_config.py`: registered `scrub_event` in the structlog processor chain
+  4. Extended PII patterns in `app/pii.py`: added `passport_vn` (format: 1 uppercase letter + 7 digits) and `address_vn` (keyword-based with `(?i)` inline flag for case-insensitive matching)
+- [EVIDENCE_LINK]: 3826e3c4a27f9ec5d3f55c4ad35aa8aec87817d7, 06709cac79ca0fd7330373b4085a88d579d235eb
 
 ### [MEMBER_B_NAME]
 - [TASKS_COMPLETED]: 
