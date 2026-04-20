@@ -83,7 +83,7 @@
 
 ### Lại Đức Anh (Member D)
 - [TASKS_COMPLETED]: running inject_incident.py and load_test.py to generation logs.json
-- [EVIDENCE_LINK]: https://github.com/hoxuanphu/Lab13-Nhom16-E402/blob/main/data/logs.jsonl
+- [EVIDENCE_LINK]: [data/logs.jon](https://github.com/hoxuanphu/Lab13-Nhom16-E402/blob/main/data/logs.jsonl)
 
 ### Phạm Anh Quân (Member E)
 - [TASKS_COMPLETED]: 
