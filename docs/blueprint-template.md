@@ -7,7 +7,7 @@
 - [REPO_URL]: 
 - [MEMBERS]:
   - Member A: Hoàng Ngọc Thạch | Role: Logging & PII
-  - Member B: [Name] | Role: Tracing & Enrichment
+  - Member B: Đào Danh Đăng Phụng | Role: Tracing & Enrichment
   - Member C: Nguyễn Minh Trí | Role: SLO & Alerts
   - Member D: Lại Đức Anh |Load test & incident injection
   - Member E: Phạm Anh Quân | Dashboard & evidence
@@ -65,9 +65,14 @@
   4. Extended PII patterns in `app/pii.py`: added `passport_vn` (format: 1 uppercase letter + 7 digits) and `address_vn` (keyword-based with `(?i)` inline flag for case-insensitive matching)
 - [EVIDENCE_LINK]: 3826e3c4a27f9ec5d3f55c4ad35aa8aec87817d7, 06709cac79ca0fd7330373b4085a88d579d235eb
 
-### [MEMBER_B_NAME]
-- [TASKS_COMPLETED]: 
-- [EVIDENCE_LINK]: 
+### Đào Danh Đăng Phụng
+- [TASKS_COMPLETED]:
+  - Mình phụ trách tracing và enrichment cho Langfuse. Mình đã nâng tích hợp lên SDK v4, cấu hình đúng môi trường `dev`, và đảm bảo trace được đẩy lên Langfuse Cloud ổn định.
+  - Trong `app/agent.py`, mình instrument `/chat` thành trace có root name `qa-s07`/`qa-s10` theo từng phiên, đồng thời tách thêm các bước con `retrieve`, `generate`, `quality_check` để waterfall hiển thị rõ hơn.
+  - Mình đã enrich trace với các trường `user_id_hash`, `session_id`, `feature`, `model`, `env`, `correlation_id`, `doc_count`, `query_preview`, `usage_input_tokens`, `usage_output_tokens` để có đủ ngữ cảnh truy vết và lọc theo từng request.
+  - Mình đã kiểm tra end-to-end bằng `scripts/load_test.py --concurrency 5`, xác nhận hệ thống tạo được hơn 10 traces và trace đều có `environment=dev`.
+  - Ảnh evidence của mình gồm: danh sách trace có hơn 10 dòng, waterfall của trace `qa-s10`, màn hình chi tiết input/output, và màn hình metadata của cùng trace.
+- [EVIDENCE_LINK]: `app/tracing.py`, `app/agent.py`, `app/main.py`, `.env` (local only), `screenshots/langfuse_trace_list_10_plus.png`, `screenshots/langfuse_trace_waterfall_qa_s10.png`, `screenshots/langfuse_trace_detail_input_output.png`, `screenshots/langfuse_trace_metadata.png`
 
 ### Nguyễn Minh Trí
 - [TASKS_COMPLETED]: 
