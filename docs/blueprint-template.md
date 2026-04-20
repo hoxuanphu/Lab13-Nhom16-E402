@@ -3,22 +3,22 @@
 > **Instruction**: Fill in all sections below. This report is designed to be parsed by an automated grading assistant. Ensure all tags (e.g., `[GROUP_NAME]`) are preserved.
 
 ## 1. Team Metadata
-- [GROUP_NAME]: 
+- [GROUP_NAME]: Nhóm 16 E402
 - [REPO_URL]: 
 - [MEMBERS]:
-  - Member A: Hoàng Ngọc Thạch | Role: Logging & PII
-  - Member B: Đào Danh Đăng Phụng | Role: Tracing & Enrichment
-  - Member C: Nguyễn Minh Trí | Role: SLO & Alerts
-  - Member D: Lại Đức Anh |Load test & incident injection
-  - Member E: Phạm Anh Quân | Dashboard & evidence
-  - Member F: Hồ Xuân Phú | Role: Demo & Report
+  - Member A: Hoàng Ngọc Thạch - 2A202600068 | Role: Logging & PII
+  - Member B: Đào Danh Đăng Phụng - 2A202600358 | Role: Tracing & Enrichment
+  - Member C: Nguyễn Minh Trí - 2A202600182 | Role: SLO & Alerts
+  - Member D: Lại Đức Anh - 2A202600374 |Load test & incident injection
+  - Member E: Phạm Anh Quân - 2A202600252 | Dashboard & evidence
+  - Member F: Hồ Xuân Phú - 2A202600061 | Role: Demo & Report
 
 ---
 
 ## 2. Group Performance (Auto-Verified)
-- [VALIDATE_LOGS_FINAL_SCORE]: 98/100
-- [TOTAL_TRACES_COUNT]: 83
-- [PII_LEAKS_FOUND]: 0
+- VALIDATE_LOGS_FINAL_SCORE: 98/100
+- TOTAL_TRACES_COUNT: 83
+- PII_LEAKS_FOUND: 0
 
 ---
 
