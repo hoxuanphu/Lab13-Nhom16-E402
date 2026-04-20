@@ -6,10 +6,10 @@
 - [GROUP_NAME]: 
 - [REPO_URL]: 
 - [MEMBERS]:
-  - Member A: [Name] | Role: Logging & PII
+  - Member A: Hoàng Ngọc Thạch | Role: Logging & PII
   - Member B: [Name] | Role: Tracing & Enrichment
   - Member C: Nguyễn Minh Trí | Role: SLO & Alerts
-  - Member D:  |Load test & incident injection
+  - Member D: Lại Đức Anh |Load test & incident injection
   - Member E: Phạm Anh Quân | Dashboard & evidence
   - Member F: [Name] | Role: Demo & Report
 
