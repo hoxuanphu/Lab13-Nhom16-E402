@@ -8,7 +8,7 @@
 - [MEMBERS]:
   - Member A: [Name] | Role: Logging & PII
   - Member B: [Name] | Role: Tracing & Enrichment
-  - Member C: [Name] | Role: SLO & Alerts
+  - Member C: Nguyễn Minh Trí | Role: SLO & Alerts
   - Member D: [Name] | Role: Load Test & Dashboard
   - Member E: [Name] | Role: Demo & Report
 
@@ -34,13 +34,14 @@
 - [SLO_TABLE]:
 | SLI | Target | Window | Current Value |
 |---|---:|---|---:|
-| Latency P95 | < 3000ms | 28d | |
-| Error Rate | < 2% | 28d | |
-| Cost Budget | < $2.5/day | 1d | |
+| Latency P95 | < 2500ms | 28d | (Pending Load Test) |
+| Error Rate | < 1% | 28d | (Pending Load Test) |
+| Quality Score | > 0.8 | 28d | (Pending Load Test) |
+| Cost Budget | < $2.0/day | 1d | (Pending Load Test) |
 
 ### 3.3 Alerts & Runbook
-- [ALERT_RULES_SCREENSHOT]: [Path to image]
-- [SAMPLE_RUNBOOK_LINK]: [docs/alerts.md#L...]
+- [ALERT_RULES_SCREENSHOT]: [docs/screenshots/alert_rules.png]
+- [SAMPLE_RUNBOOK_LINK]: [docs/alerts.md#1-high-latency-p95]
 
 ---
 
@@ -63,9 +64,12 @@
 - [TASKS_COMPLETED]: 
 - [EVIDENCE_LINK]: 
 
-### [MEMBER_C_NAME]
+### Nguyễn Minh Trí
 - [TASKS_COMPLETED]: 
-- [EVIDENCE_LINK]: 
+  - Defined SLIs/SLOs for Latency, Error Rate, Cost, and Quality.
+  - Configured Alertmanager-style alert rules for incident scenarios.
+  - Authored runbooks with specific mitigation steps for RAG and LLM failures.
+- [EVIDENCE_LINK]: (config/slo.yaml), (config/alert_rules.yaml)
 
 ### [MEMBER_D_NAME]
 - [TASKS_COMPLETED]: 
