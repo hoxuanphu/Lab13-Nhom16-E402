@@ -25,7 +25,7 @@
 ## 3. Technical Evidence (Group)
 
 ### 3.1 Logging & Tracing
-- [EVIDENCE_CORRELATION_ID_SCREENSHOT]: ![correlation_id](../screenshots/correlation_id.png)
+- [EVIDENCE_CORRELATION_ID_SCREENSHOT]: ![correlation id](../screenshots/correlation_id.png)
 - [EVIDENCE_PII_REDACTION_SCREENSHOT]: ![pii_1](../screenshots/pii_1.png) ![pii_2](../screenshots/pii_2.png)
 - [EVIDENCE_TRACE_WATERFALL_SCREENSHOT]: [Path to image]
 - [TRACE_WATERFALL_EXPLANATION]: (Briefly explain one interesting span in your trace)
