@@ -9,8 +9,9 @@
   - Member A: [Name] | Role: Logging & PII
   - Member B: [Name] | Role: Tracing & Enrichment
   - Member C: Nguyễn Minh Trí | Role: SLO & Alerts
-  - Member D: [Name] | Role: Load Test & Dashboard
-  - Member E: [Name] | Role: Demo & Report
+  - Member D:  |Load test & incident injection
+  - Member E: Phạm Anh Quân | Dashboard & evidence
+  - Member F: [Name] | Role: Demo & Report
 
 ---
 
@@ -30,6 +31,7 @@
 - [TRACE_WATERFALL_EXPLANATION]: (Briefly explain one interesting span in your trace)
 
 ### 3.2 Dashboard & SLOs
+<<<<<<< Updated upstream
 - [DASHBOARD_6_PANELS_SCREENSHOT]: ![alt text](Lab13-Nhom16-E402\screenshots\dashboard.png)
 - [SLO_TABLE]:  
 
@@ -38,6 +40,17 @@
 | Latency P95 | < 2500ms | 28d | 150.0ms |  
 | Error Rate | < 1% | 28d | 0.00% |  
 | Cost Budget | < $2.0/day | 1d | $0.11 |  
+=======
+- [DASHBOARD_6_PANELS_SCREENSHOT]: [Path to image]
+- [SLO_TABLE]:
+
+| SLI | Target | Window | Current Value |
+|---|---:|---|---:|
+| Latency P95 | < 2500ms | 28d | (Pending Load Test) |
+| Error Rate | < 1% | 28d | (Pending Load Test) |
+| Quality Score | > 0.8 | 28d | (Pending Load Test) |
+| Cost Budget | < $2.0/day | 1d | (Pending Load Test) |
+>>>>>>> Stashed changes
 
 ### 3.3 Alerts & Runbook
 - ALERT_RULES_SCREENSHOT: [docs/screenshots/current_dashboard.png](https://github.com/hoxuanphu/Lab13-Nhom16-E402/blob/main/screenshots/alert.png)
