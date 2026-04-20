@@ -30,7 +30,7 @@
 - [TRACE_WATERFALL_EXPLANATION]: (Briefly explain one interesting span in your trace)
 
 ### 3.2 Dashboard & SLOs
-- [DASHBOARD_6_PANELS_SCREENSHOT]: [Path to image]
+- [DASHBOARD_6_PANELS_SCREENSHOT]: ![alt text](Lab13-Nhom16-E402\screenshots\dashboard.png)
 - [SLO_TABLE]:  
 
 | SLI | Target | Window | Current Value |  
