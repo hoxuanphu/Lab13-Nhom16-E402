@@ -12,7 +12,6 @@
   1. Disable `rag_slow` incident: `python scripts/inject_incident.py --scenario rag_slow --disable`.
   2. Implement caching for common RAG queries.
   3. Reduce the number of retrieved documents (`top_k`).
-
 ## 2. High error rate (Symptom: tool_fail)
 - Severity: P1
 - Trigger: `error_rate_pct > 2 for 2m`
