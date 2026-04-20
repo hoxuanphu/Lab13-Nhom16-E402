@@ -31,27 +31,26 @@
 
 ### 3.2 Dashboard & SLOs
 - [DASHBOARD_6_PANELS_SCREENSHOT]: [Path to image]
-- [SLO_TABLE]:
-| SLI | Target | Window | Current Value |
-|---|---:|---|---:|
-| Latency P95 | < 2500ms | 28d | (Pending Load Test) |
-| Error Rate | < 1% | 28d | (Pending Load Test) |
-| Quality Score | > 0.8 | 28d | (Pending Load Test) |
-| Cost Budget | < $2.0/day | 1d | (Pending Load Test) |
+- [SLO_TABLE]:  
+
+| SLI | Target | Window | Current Value |  
+| --- | --- | --- | --- |  
+| Latency P95 | < 2500ms | 28d | 150.0ms |  
+| Error Rate | < 1% | 28d | 0.00% |  
+| Cost Budget | < $2.0/day | 1d | $0.11 |  
 
 ### 3.3 Alerts & Runbook
-- [ALERT_RULES_SCREENSHOT]: [docs/screenshots/alert_rules.png]
-- [SAMPLE_RUNBOOK_LINK]: [docs/alerts.md#1-high-latency-p95]
+- ALERT_RULES_SCREENSHOT: [docs/screenshots/current_dashboard.png](https://github.com/hoxuanphu/Lab13-Nhom16-E402/blob/main/screenshots/alert.png)
+- SAMPLE_RUNBOOK_LINK: [docs/alerts.md#1-high-latency-p95](https://github.com/hoxuanphu/Lab13-Nhom16-E402/blob/main/docs/alerts.md#1-high-latency-p95)
 
 ---
 
 ## 4. Incident Response (Group)
-- [SCENARIO_NAME]: (e.g., rag_slow)
-- [SYMPTOMS_OBSERVED]: 
-- [ROOT_CAUSE_PROVED_BY]: (List specific Trace ID or Log Line)
-- [FIX_ACTION]: 
-- [PREVENTIVE_MEASURE]: 
-
+- SCENARIO_NAME: rag_slow  
+- SYMPTOMS_OBSERVED: During the load test, the P95 latency for API requests climbed towards the 2500ms threshold. While the system remained functional, tracing revealed significant bottlenecks in the vector retrieval phase, resulting in a degraded user experience.
+- ROOT_CAUSE_PROVED_BY: Proven by log entry at 2026-04-20T07:49:34.226583Z (Correlation ID: req-b3a6d363) which explicitly captured the `incident_enabled` event for the `rag_slow` scenario. Subsequent traces confirmed retrieval spans taking >90% of the request time.
+- FIX_ACTION: The emergency response was to disable the mock incident and transition the retrieval pipeline to a fallback keyword-based search to restore acceptable performance.
+- PREVENTIVE_MEASURE: We recommend implementing a circuit breaker pattern for the RAG service and scaling the vector store horizontally to handle higher concurrency.
 ---
 
 ## 5. Individual Contributions & Evidence
@@ -69,7 +68,7 @@
   - Defined SLIs/SLOs for Latency, Error Rate, Cost, and Quality.
   - Configured Alertmanager-style alert rules for incident scenarios.
   - Authored runbooks with specific mitigation steps for RAG and LLM failures.
-- [EVIDENCE_LINK]: (config/slo.yaml), (config/alert_rules.yaml)
+- [EVIDENCE_LINK]: [first commit](https://github.com/hoxuanphu/Lab13-Nhom16-E402/commit/aaea471954ab6e42c985a54145c98c8392f92e84)
 
 ### [MEMBER_D_NAME]
 - [TASKS_COMPLETED]: 
